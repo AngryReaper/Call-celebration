@@ -26,10 +26,10 @@ class Gallery extends Component {
     return (
       <div className="gallery-wrapper">
         <h1 id="gallery" className="block-title">Галерея</h1>
-        {this.props.appState.galleriesTitles.map((gallery, index) => {
+        {this.props.appState.galleries.map((gallery, index) => {
         return (
         <div className="gallery-block" key={`gallery-${index}`}>
-          <p className="gallery-block-title">{gallery}</p>
+          <p id={gallery.link} className="gallery-block-title">{gallery.description}</p>
           <div className="gallery-block-film">
             <img src={ribbonEdge} alt=""/>
             <div className="film-frames">

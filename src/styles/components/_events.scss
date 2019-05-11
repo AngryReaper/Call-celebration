@@ -23,6 +23,11 @@
       margin-bottom: 3rem;
       cursor: pointer;
 
+      a {
+        color: #cf5800;
+        text-decoration: none;
+      }
+
       &:last-child {
         .details-description {
           margin: 13px 0;

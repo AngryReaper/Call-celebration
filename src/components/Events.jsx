@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Events = (props) => (
   <div className="events-wrapper">
@@ -8,11 +9,13 @@ const Events = (props) => (
     <div className="events-details-wrapper">
       {props.appState.events.map((item, index) => {
         return (
-        <div className="events-details-block" key={index}>
-          <div className="details-photo-block">
-            <img className="details-photo" src={require('../images/events/' + item.photo)} alt=""/>
-            <p className="details-description">{item.description}</p>
-          </div>
+        <div className="events-details-block" key={`event-${index}`}>
+          <AnchorLink href={item.link}>
+            <div className="details-photo-block">
+              <img className="details-photo" src={require('../images/events/' + item.photo)} alt=""/>
+              <p className="details-description">{item.description}</p>
+            </div>
+          </AnchorLink>
         </div>)
       })}
     </div>

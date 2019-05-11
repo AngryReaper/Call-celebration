@@ -1,0 +1,62 @@
+.recalls-wrapper {
+  padding: 0 1rem;
+
+  .recalls-container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 930px;
+    padding: 40px 0 0 60px;
+
+    .recall-item-block {
+      width: 45%;
+      margin-bottom: 50px;
+      flex: 0 0 180px;
+      transform: rotate(-12deg);
+
+      .big-recall-item, .recall-item, .small-recall-item {
+        padding: 0 10px 10px;
+        width: 370px;
+        background: white;
+        box-sizing: content-box;
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+      }
+
+      .recall-item-title, .recall-item-text {
+        width: 370px;
+        font-family: 'Segoe Script Bold';
+      }
+
+      .recall-item-title {
+        font-size: $small-text;
+        text-align: center;
+        background: white;
+        padding-top: 26px;
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #cf5800;
+      }
+
+      .recall-item-text {
+        font-size: $recalls-text;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 6px 5px;
+        line-height: 1.3rem;
+        background: url('../images/line.png');
+        background-size: 50%;
+      }
+    }
+  }
+
+  .send-me {
+    font-size: $small-text;
+    font-family: 'Segoe Script Bold';
+    text-align: center;
+
+    span {
+      font-family: 'Segoe Script';
+    }
+  }
+}
