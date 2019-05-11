@@ -80,39 +80,47 @@
   }
 }
 
-.popup-modal {
-  position: relative;
-  width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  background: white;
-  padding: 100px 0;
-  border: 1px solid gray;
-  border-radius: 15px;
+.ReactModal__Overlay {
+  background-color: rgba(255,255,255,0.95) !important;
 
-  &:focus {
-    outline: none;
-  }
-
-  .popup-modal-image-wrapper {
-    width: 600px;
-    height: 600px;
+  .popup-modal {
+    position: relative;
+    width: 710px;
     margin: 0 auto;
-  }
-
-  .popup-close {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 50px 0;
+    border: 1px solid gray;
+    border-radius: 15px;
   
     &:focus {
       outline: none;
+    }
+  
+    .popup-modal-image-wrapper {
+      width: 600px;
+      height: 600px;
+      margin: 0 auto;
+
+      img {
+        border: 1px solid gray;
+      }
+    }
+  
+    .popup-close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
