@@ -1,0 +1,35 @@
+.gallery-wrapper {
+  padding: 0 1rem;
+
+  .block-title {
+    margin-bottom: 0;
+  }
+
+  .gallery-block {
+    .gallery-block-title {
+      font-size: $big-text;
+      margin: 4rem 0 1rem;
+    }
+
+    .gallery-block-film {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .film-frames {
+        display: flex;
+        padding-left: 1rem;
+        background-color: #231f20;
+
+        .film-frame {
+          width: 184px;
+            
+          img {
+            border-radius: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+      
+    }
+  }
+}

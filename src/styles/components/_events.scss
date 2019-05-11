@@ -1,0 +1,46 @@
+.events-wrapper {
+  padding: 0 1rem;
+
+  .events-subheader {
+    font-size: $small-text;
+    font-family: 'Segoe Script Bold';
+    text-align: justify;
+  }
+
+  .events-subheader-all {
+    font-size: $big-text;
+    font-family: 'Segoe Script';
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  .events-details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .events-details-block {
+      margin-bottom: 3rem;
+      cursor: pointer;
+
+      &:last-child {
+        .details-description {
+          margin: 13px 0;
+          line-height: 2rem;
+        }
+      }
+
+      .details-description {
+        font-size: $medium-text;
+      }
+    }
+  }
+
+  .events-extra-info {
+    .info-block {
+      font-size: $small-text;
+      font-family: 'Segoe Script Bold';
+      text-align: justify;
+    }
+  }
+}

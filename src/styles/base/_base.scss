@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Segoe Script';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Segoe Script'), local('SegoeScript'),
+  url('../fonts/segoe-script-regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Segoe Script Bold';
+  font-style: bold;
+  font-weight: 100;
+  src: local('Segoe Script Bold'), local('SegoeScriptBold'),
+  url('../fonts/segoe-script-bold.ttf') format('truetype')
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+  background-image: url('../images/background.jpg');
+  font-family: 'Segoe Script'
+}
