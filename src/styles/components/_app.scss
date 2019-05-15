@@ -23,6 +23,25 @@
     background-color: rgba($color: white, $alpha: 0.8);
     border-radius: 30px;
     padding: 0.5rem 1rem 2rem;
+    margin-bottom: 50px;
+
+    .details {
+      margin-top: 50px;
+      padding: 0 1rem;
+  
+      .details-block {
+        display: flex;
+        margin-top: 40px;
+  
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+  
+          .details-text-block {
+            padding: 40px 2rem 20px 0;
+          }
+        }
+      }
+    }
 
     .details-photo-block {
       background: white;

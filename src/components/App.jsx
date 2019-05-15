@@ -4,6 +4,7 @@ import AppState from '../AppState';
 import Events from './Events';
 import Gallery from './Gallery';
 import Recalls from './Recalls';
+import Contacts from './Contacts';
 
 const appState = new AppState();
 
@@ -19,6 +20,7 @@ class App extends Component {
           <Events appState={appState} />
           <Gallery appState={appState} />
           <Recalls appState={appState} />
+          <Contacts appState={appState} />
         </div>
       </div>
     );

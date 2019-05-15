@@ -1,0 +1,33 @@
+.contacts-wrapper {
+  padding: 0 1rem;
+
+  .details {
+    .details-block {
+      .details-description {
+        font-size: $contacts-text;
+        line-height: $medium-text;
+      }
+    }
+  }
+
+  .contacts-order-block {
+    text-align: center;
+    margin-top: 80px;
+
+    .order-dates {
+      display: inline;
+      font-size: $medium-text;
+      font-family: 'Segoe Script Bold';
+      border-bottom: 2px solid $main-color;
+    }
+
+    .order-title {
+      font-size: $small-text;
+      font-family: 'Segoe Script Bold';
+    }
+
+    .order-text {
+      font-family: 'Segoe Script';
+    }
+  }
+}

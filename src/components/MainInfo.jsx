@@ -35,15 +35,15 @@ class MainInfo extends Component {
             })}
           </ul>
           <div className="main-info-contacts-block">
-            <p className="name">{this.props.appState.contacts.name}</p>
-            <p className="phone">{this.props.appState.contacts.phone}</p>
-            <p className="email">{this.props.appState.contacts.email}</p>
+            <p className="name">{this.props.appState.contactsInfo.name}</p>
+            <p className="phone">{this.props.appState.contactsInfo.phone}</p>
+            <p className="email">{this.props.appState.contactsInfo.email}</p>
           </div>
         </div>
-        <div className="main-info-details">
+        <div className="details">
           {this.props.appState.mainInfo.map((item, index) => {
             return (
-            <div className="main-info-details-block" key={'item-' + index}>
+            <div className="details-block" key={'item-' + index}>
               <div className="details-photo-block">
                 <img className="details-photo" src={require('../images/mainInfo/' + item.photo)} alt=""/>
                 <p className="details-description">{item.description}</p>
@@ -59,7 +59,7 @@ class MainInfo extends Component {
             </div>)
           })}
         </div>
-        {this.state.scrollTopVisible && <ScrollButton scrollStepInPx="50" delayInMs="16.66" />}
+        {this.state.scrollTopVisible && <ScrollButton scrollStepInPx="50" delayInMs="5" />}
       </div>
     )
   }
