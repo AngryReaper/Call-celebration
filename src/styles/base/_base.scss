@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 600;
   src: local('Segoe Script'), local('SegoeScript'),
-  url('../fonts/segoe-script-regular.ttf') format('truetype')
+  url('../fonts/segoe-script-regular.woff') format('woff')
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: bold;
   font-weight: 100;
   src: local('Segoe Script Bold'), local('SegoeScriptBold'),
-  url('../fonts/segoe-script-bold.ttf') format('truetype')
+  url('../fonts/segoe-script-bold.woff') format('woff')
 }
 
 body {
