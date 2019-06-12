@@ -25,7 +25,7 @@
 
       .recall-item-title, .recall-item-text {
         width: 370px;
-        font-family: 'Segoe Script Bold';
+        font-family: 'Segoe Script Bold', 'Comic Sans MS', serif;
       }
 
       .recall-item-title {
@@ -52,11 +52,11 @@
 
   .send-me {
     font-size: $small-text;
-    font-family: 'Segoe Script Bold';
+    font-family: 'Segoe Script Bold', 'Comic Sans MS', serif;
     text-align: center;
 
     span {
-      font-family: 'Segoe Script';
+      font-family: 'Segoe Script', 'Comic Sans MS', serif;
     }
   }
 }

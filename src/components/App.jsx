@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="main-wrapper">
-        <h1 className="main-header">Я умею делать праздник!</h1>
+        <h1 className="main-header">Я умею делать праздник!!</h1>
         <h2 className="sub-header">Проведение свадеб, юбилеев, тематических праздников</h2>
         <div className="container">
           <MainInfo appState={appState} />

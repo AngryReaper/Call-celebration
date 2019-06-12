@@ -17,17 +17,17 @@
     .order-dates {
       display: inline;
       font-size: $medium-text;
-      font-family: 'Segoe Script Bold';
+      font-family: 'Segoe Script Bold', 'Comic Sans MS', serif;
       border-bottom: 2px solid $main-color;
     }
 
     .order-title {
       font-size: $small-text;
-      font-family: 'Segoe Script Bold';
+      font-family: 'Segoe Script Bold', 'Comic Sans MS', serif;
     }
 
     .order-text {
-      font-family: 'Segoe Script';
+      font-family: 'Segoe Script', 'Comic Sans MS', serif;
     }
   }
 }

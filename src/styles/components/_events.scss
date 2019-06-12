@@ -3,13 +3,13 @@
 
   .events-subheader {
     font-size: $small-text;
-    font-family: 'Segoe Script Bold';
+    font-family: 'Segoe Script Bold', 'Comic Sans MS', serif;
     text-align: justify;
   }
 
   .events-subheader-all {
     font-size: $big-text;
-    font-family: 'Segoe Script';
+    font-family: 'Segoe Script', 'Comic Sans MS', serif;
     text-align: center;
     margin: 3rem 0;
   }
@@ -44,7 +44,7 @@
   .events-extra-info {
     .info-block {
       font-size: $small-text;
-      font-family: 'Segoe Script Bold';
+      font-family: 'Segoe Script Bold', 'Comic Sans MS', serif;
       text-align: justify;
     }
   }
