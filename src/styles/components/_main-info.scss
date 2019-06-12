@@ -3,9 +3,9 @@
   height: 100%;
   
 
-  .main-info-block--desktop {
+  .main-info-block {
     background: url('../images/main-image.jpg') no-repeat;
-    max-height: 646px;
+    height: 646px;
 
     .menu-block {
       list-style-type: none;
@@ -74,7 +74,4 @@
       }
     }
   }
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  
 }
