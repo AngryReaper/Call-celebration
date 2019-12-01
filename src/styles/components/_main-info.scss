@@ -1,77 +1,228 @@
-.main-info-wrapper {
-  position: relative;
-  height: 100%;
-  
-
-  .main-info-block {
-    background: url('../images/main-image.jpg') no-repeat;
-    height: 646px;
-
-    .menu-block {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem;
-      margin: -2px 0 0;
-      box-sizing: content-box;
-      height: 36px;
-      font-size: $medium-text;
-      z-index: 1;
-      background: linear-gradient(to bottom, rgba(#f8f3e3, 1), rgba(#fdfdfd, 0.4));
-  
-      li {
-        a {
-          color: $main-color;
-          text-decoration: none;
-        }
-        
-
-        &:hover {
-          border-bottom: 2px solid $main-color;
-          cursor: pointer;
-        }
+//@media screen and (min-width: 768px) {
+  .main-info-wrapper {
+    position: relative;
+    height: 100%;
+    
+    .sidebar-block {
+      display: none;
+      .main-header-mobile {
+        display: none;
       }
     }
+
+    .main-info-block {
+      height: 646px;
+
+      .main-info-image {
+        position: absolute;
+        width: 100%;
+      }
+
+      .menu-block {
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        margin: -2px 0 0;
+        box-sizing: content-box;
+        height: 36px;
+        font-size: $medium-text;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(#f8f3e3, 1), rgba(#fdfdfd, 0.4));
     
-    .main-info-contacts-block {
-      position: absolute;
-      background-color: rgba($color: white, $alpha: 0.8);
-      font-size: $small-text;
-      text-align: center;
-      border-radius: 30px;
-      padding: 1rem;
-      top: 343px;
-      left: 1rem;
-  
-      .name {
-        margin-top: 0;
+        li {
+          a {
+            color: $main-color;
+            text-decoration: none;
+          }
+          
+
+          &:hover {
+            border-bottom: 2px solid $main-color;
+            cursor: pointer;
+          }
+        }
       }
-  
-      .phone {
-        margin: 1.5rem 0; 
-      }
-  
-      .email {
-        margin-bottom: 0;
+      
+      .main-info-contacts-block {
+        position: absolute;
+        background-color: rgba($color: white, $alpha: 0.8);
+        font-size: $small-text;
+        text-align: center;
+        border-radius: 30px;
+        padding: 1rem;
+        top: 343px;
+        left: 1rem;
+    
+        .name {
+          margin-top: 0;
+        }
+    
+        .phone {
+          margin: 1.5rem 0; 
+        }
+    
+        .email {
+          margin-bottom: 0;
+        }
       }
     }
   }
+//}
 
-  .main-info-details {
-    margin-top: 50px;
-    padding: 0 1rem;
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-wrapper {
+    .container {
+      .block-title {
+        font-size: 8vw;
+      }
+      .main-info-wrapper {
+        .sidebar-block {
+          display: flex;
+          height: 3.75rem;
+          align-items: baseline;
+          justify-content: space-between;
+    
+          .main-header-mobile {
+            display: block;
+            margin: 0;
+            font-size: 4vw;
+          }
+    
+          .bm-overlay {
+            left: 0;
+            top: 0;
+          }
+    
+          .bm-menu-wrap {
+            left: 0;
+            top: 0;
+    
+            div {
+              .bm-cross-button {
+                right: 24px !important;
+                button {
+                  outline: none;
+                }
+              }
+            }
+          }
+        }
+    
+        .main-info-block {
+          position: relative;
+          height: auto;
+    
+          .main-info-image {
+            position: static;
+          }
+    
+          .menu-block {
+            display: none;
+          }
+    
+          .main-info-contacts-block {
+            top: auto;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            border-radius: 0;
+            font-size: 3.5vw;
+            .name, .email {
+              margin: 0;
+            }
+            .phone {
+              margin: 0.6em 0;
+            }
+          }
+        }
+    
 
-    .main-info-details-block {
-      display: flex;
-      margin-top: 40px;
 
-      &:nth-child(even) {
-        flex-direction: row-reverse;
-
-        .details-text-block {
-          padding: 40px 2rem 20px 0;
+        /* Individual item */
+        .bm-item {
+          display: inline-block;
+    
+          /* Our sidebar item styling */
+          text-decoration: none;
+          margin-bottom: 10px;
+          color: $main-color;
+          transition: color 0.2s;
+          outline: none;
+        }
+    
+        /* Change color on hover */
+        .bm-item:hover {
+          color: $back-mobile;
+        }
+    
+        /* Position and sizing of burger button */
+        .bm-burger-button {
+          position: relative;
+          width: 36px;
+          height: 29px;
+          left: 0;
+          top: 12px;
+          padding: 2px;
+          border: 2px solid $main-color;
+          border-radius: 5px;
+    
+          span {
+            /* Color/shape of burger icon bars */
+            .bm-burger-bars {
+              background: $main-color;
+              right: 3px !important;
+              left: 3px !important;
+              height: 7px !important;
+              &:first-child {
+                top: 3px !important;
+              }
+              &:nth-child(2) {
+                top: 13px !important;
+              }
+              &:nth-child(3) {
+                top: 23px !important;
+              }
+            }
+          }
+          button {
+            outline: none;
+          }
+        }
+    
+        /* Position and sizing of clickable cross button */
+        .bm-cross-button {
+          height: 24px;
+          width: 24px;
+          > span {
+            right: 32px;
+          }
+        }
+    
+        /* Color/shape of close button cross */
+        .bm-cross {
+          background: $main-color;
+        }
+    
+        /* General sidebar styles */
+        .bm-menu {
+          background: $back-mobile2;
+          padding: 2.5em 1.5em 0;
+          font-size: 1.15em;
+          margin-right: 1em;
+        }
+    
+        /* Wrapper for item list */
+        .bm-item-list {
+          color: #b8b7ad;
+        }
+    
+        /* Styling of overlay */
+        .bm-overlay {
+          background: rgba(0, 0, 0, 0.3);
         }
       }
-    }
+    } 
   }
 }

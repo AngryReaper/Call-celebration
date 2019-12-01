@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ScrollButton from './ScrollButton';
+import mainImage from '../images/main-image.jpg';
+import Sidebar from './Sidebar';
 
 class MainInfo extends Component {
 
@@ -28,7 +30,12 @@ class MainInfo extends Component {
   render() {
     return (
       <div className="main-info-wrapper">
+        <div className="sidebar-block">
+          <Sidebar />
+          <p className="main-header-mobile">Закажи праздник!</p>
+        </div>
         <div id="main" className="main-info-block">
+          <img src={mainImage} alt="mainImage" className="main-info-image" />
           <ul className="menu-block">
             {this.props.appState.menu.map((menuItem, index) => {
               return <li key={index}><AnchorLink href={menuItem.link}>{menuItem.text}</AnchorLink></li>

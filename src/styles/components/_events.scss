@@ -49,3 +49,44 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .events-wrapper {
+    padding: 0;
+
+    .events-subheader {
+      font-size: 3.5vw;
+    }
+
+    .events-subheader-all {
+      font-size: 6vw;
+      margin: 6vw 0;
+    }
+    
+    .events-details-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .events-details-block {
+        max-width: 370px;
+        .details-photo-block {
+          width: 100%;
+
+          .details-photo {
+            width: 100%;
+          }
+
+          .details-description {
+            font-size: 5vw;
+          }
+        }
+      }
+    }
+    
+    .events-extra-info {
+      .info-block {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}

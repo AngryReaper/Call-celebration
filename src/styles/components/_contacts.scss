@@ -31,3 +31,16 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts-wrapper {
+    .contacts-order-block {
+      .order-dates {
+        font-size: $small-text-mobile;
+      }
+      .order-title {
+        font-size: $extra-small-text-mobile;
+      }
+    }
+  }
+}

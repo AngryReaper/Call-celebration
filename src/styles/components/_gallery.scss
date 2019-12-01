@@ -15,6 +15,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .film-frames {
         display: flex;
         padding-left: 1rem;
@@ -30,6 +31,43 @@
         }
       }
       
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .gallery-wrapper {
+    .gallery-block {
+      display: flex;
+      flex-direction: column;
+      height: 990px;
+
+      .gallery-block-title {
+        font-size: 6vw;
+        margin: 0 0 1rem;
+        text-align: center;
+      }
+
+      .gallery-block-film {
+        transform: rotate(90deg);
+        justify-content: center;
+        align-items: flex-start;
+        height: 90vw;
+        &>img {
+          width: 870px;
+        }
+
+        .film-frames {
+          padding: 0 1rem;
+          width: 838px;
+
+          .film-frame {
+            &>img {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
     }
   }
 }

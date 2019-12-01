@@ -4,7 +4,7 @@
   .recalls-container {
     display: flex;
     flex-flow: column wrap;
-    height: 930px;
+    height: 950px;
     padding: 40px 0 0 60px;
 
     .recall-item-block {
@@ -57,6 +57,62 @@
 
     span {
       font-family: 'Segoe Script', 'Comic Sans MS', serif;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .recalls-wrapper {
+    padding: 0;
+
+    .recalls-container {
+      height: auto;
+      padding: 20px 0 0;
+      align-items: center;
+
+      .recall-item-block {
+        width: auto;
+        flex: 0 0 130px;
+        transform: none;
+
+        .big-recall-item, .recall-item, .small-recall-item {
+          width: 270px;
+
+          .recall-item-title, .recall-item-text {
+            width: 270px;
+          }
+
+          .recall-item-title {
+            font-size: $small-text-mobile;
+          }
+
+          .recall-item-text {
+            font-size: $extra-small-text-mobile;
+            line-height: 1.15625rem;
+            padding: 2px 5px;
+          }
+        }
+      }
+    }
+    .send-me {
+      font-size: $recalls-text-big;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .recalls-wrapper {
+    .recalls-container {
+      padding: 0;
+
+      .recall-item-block {
+        .big-recall-item, .recall-item, .small-recall-item {
+          .recall-item-text {
+            font-size: $recalls-text-small-mobile;
+            line-height: $recalls-line-height-small-mobile;
+          }
+        }
+      }
     }
   }
 }

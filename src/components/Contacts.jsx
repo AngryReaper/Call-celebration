@@ -24,9 +24,9 @@ const Contacts = (props) => (
     </div>
     <div className="contacts-order-block">
       <p className="order-dates">Бронь дат:</p>
-      <p className="order-title">Телефон: <span className="order-text">{props.appState.contactsInfo.phone}</span></p>
-      <p className="order-title">E-mail: <span className="order-text">{props.appState.contactsInfo.email}</span></p>
-      <p className="order-title">VK: <span className="order-text">{props.appState.contactsInfo.vk}</span></p>
+      <p className="order-title">Телефон: <br/><span className="order-text">{props.appState.contactsInfo.phone}</span></p>
+      <p className="order-title">E-mail: <br/><span className="order-text">{props.appState.contactsInfo.email}</span></p>
+      <p className="order-title">VK: <br/><span className="order-text">{props.appState.contactsInfo.vk}</span></p>
     </div>
   </div>
 )

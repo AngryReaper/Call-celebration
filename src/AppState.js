@@ -26,7 +26,7 @@ class AppState {
   contactsInfo = {
     name: 'Александра Шумейкина',
     email: 'rusalochka_kisa@mail.ru',
-    phone: '8 (916) 772-35-58',
+    phone: '8\u00A0(916)\u00A0772-35-58',
     vk: 'https://vk.com/orxideya_a'
   }
 
@@ -60,7 +60,7 @@ class AppState {
     },
     {
       photo: 'info4.jpg',
-      description: 'Ваша Александра Шумейкина '+ this.contactsInfo.phone +' '+ this.contactsInfo.email,
+      description: 'Ваша Александра Шумейкина \n' + this.contactsInfo.phone +' '+ this.contactsInfo.email,
       detailsTitle: 'Я позабочусь, чтобы Ваш праздник прошел незабываемо!',
       detailsContent: [
         'Ведущий — это не говорящая голова. Это харизма. Умение удерживать внимание и даже, если хотите, вести за собой. Для этого мало просто говорить тосты, нужно быть интересной личностью.',

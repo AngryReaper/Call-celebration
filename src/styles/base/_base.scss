@@ -1,3 +1,5 @@
+@import './settings.scss';
+
 @font-face {
   font-family: 'Segoe Script';
   font-style: normal;
@@ -18,4 +20,11 @@ body {
   background-color: lightgoldenrodyellow;
   background-image: url('../images/background.jpg');
   font-family: 'Segoe Script'
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: $back-mobile;
+    background-image: none;
+  }
 }
