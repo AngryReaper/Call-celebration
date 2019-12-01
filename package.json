@@ -32,7 +32,7 @@
     "url-loader": "^1.1.2",
     "validator": "8.0.0",
     "webpack": "3.1.0",
-    "webpack-dev-server": "2.5.1"
+    "webpack-dev-server": "3.1.11"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
